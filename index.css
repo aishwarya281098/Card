@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@200;300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Spartan', sans-serif;
+}
+
+.container {
+  background-image: url("https://i.ibb.co/x6ntVqN/bg-pattern-top-desktop.png"), url("https://i.ibb.co/S3pr4d7/bg-pattern-bottom-desktop.png");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  height: 100vh;
+  padding: 100px;
+}
+
+.text {
+    padding: 30px;
+}
+.text h1 {
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+}
+.text p {
+    font-size: 14px;
+    color: hsl(303, 10%, 53%);
+    font-weight: 500;
+}
+.rating div {
+    background-color: hsl(300, 24%, 96%);
+    margin: 15px;
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 12px;
+    justify-content: space-evenly;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    display: flex;
+}
+.fas {
+    color: #FFA500;
+    padding-left: 3px;
+}    
+
+.card-body img {
+    width: 30px;
+    border-radius: 25px;
+    height: 30px;
+}
+.body {
+    display: flex;
+}
+.body div {
+    margin-left: 20px;
+}
+.card {
+    background-color: hsl(300, 43%, 22%);
+    padding: 5px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+.body h5 {
+    color: #fff;
+    font-size: 12px;
+}
+.body h6 {
+    font-size: 12px;
+    color: hsl(333, 80%, 67%);
+    font-weight: 300;
+}
+.card-text {
+    margin-top: 15px;
+    color: hsl(300, 24%, 96%);
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+
+@media (min-width: 992px) {
+    .section-2 > .col:nth-child(2) {
+        margin-top: 10px;
+    }
+    .section-2 > .col:nth-child(3) {
+        margin-top: 20px;
+    }
+    .rating > div:nth-child(2) {
+        margin-left: 30px;
+    }
+    .rating > div:nth-child(3) {
+        margin-left: 60px;
+    }    
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        background-image: url("https://i.ibb.co/N2P3wkV/bg-pattern-top-mobile.png");
+    }
+    .text h1 {
+        font-size: 30px;
+    }
+    .text {
+        text-align: center;
+    }
+    .rating div {
+        width: 70vw;
+        display: block;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .rating section {
+        margin-bottom: 10px;
+    }
+    .card {
+        margin-bottom: 10px;
+    }
+    .section-2 {
+        display: block;
+    }
+
+}
